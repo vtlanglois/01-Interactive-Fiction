@@ -1,226 +1,227 @@
 {
-    "uuid": "D3925CCD-B68F-4680-8848-3CE736B9FC62",
-    "name": "Sisyphus",
-    "creator": "Twine",
-    "creatorVersion": "2.3.14",
-    "schemaName": "Harlowe 3 to JSON",
-    "schemaVersion": "0.0.6",
-    "createdAtMs": 1630527361528,
-    "passages": [
-      {
-        "name": "Bottom of the Hill",
-        "tags": "",
-        "id": "1",
-        "text": "You gaze upon the steep hill ahead of you. You prepare to push the boulder yet again.\n\n[[PUSH->Hill]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Hill",
-            "original": "[[PUSH->Hill]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You gaze upon the steep hill ahead of you. You prepare to push the boulder yet again."
-      },
-      {
-        "name": "Hill",
-        "tags": "",
-        "id": "2",
-        "text": "You begin to push your boulder up the hill once more. How long have I been doing this?\n\n[[PUSH->Up the Hill]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Up the Hill",
-            "original": "[[PUSH->Up the Hill]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You begin to push your boulder up the hill once more. How long have I been doing this?"
-      },
-      {
-        "name": "Up the Hill",
-        "tags": "",
-        "id": "3",
-        "text": "You continue to push your boulder up the hill. You cannot remember how many times you have done this. Your aching body, however, remembers far too well.\n\n[[PUSH->Up and Up]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Up and Up",
-            "original": "[[PUSH->Up and Up]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. You cannot remember how many times you have done this. Your aching body, however, remembers far too well."
-      },
-      {
-        "name": "Up and Up",
-        "tags": "",
-        "id": "4",
-        "text": "You continue to push your boulder up the hill. Your knees are in pain.\n\n[[PUSH->Plateau]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Plateau",
-            "original": "[[PUSH->Plateau]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. Your knees are in pain."
-      },
-      {
-        "name": "Plateau",
-        "tags": "",
-        "id": "5",
-        "text": "You reach a plateau nestled in the hill. It only helps you a little.\n\n\n[[PUSH->Upward]]\n[[REST->Sleep]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Upward",
-            "original": "[[PUSH->Upward]]"
-          },
-          {
-            "linkText": "REST",
-            "passageName": "Sleep",
-            "original": "[[REST->Sleep]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You reach a plateau nestled in the hill. It only helps you a little."
-      },
-      {
-        "name": "Upward",
-        "tags": "",
-        "id": "6",
-        "text": "You continue to push your boulder up the hill. Your mind begins to wander.\n\n[[PUSH->Forest]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Forest",
-            "original": "[[PUSH->Forest]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. Your mind begins to wander."
-      },
-      {
-        "name": "Sleep",
-        "tags": "",
-        "id": "7",
-        "text": "You sleep, allowing your aching body to rest.\nThe boulder rolls back down the hill.\n\n[[WALK->Bottom of the Hill]]",
-        "links": [
-          {
-            "linkText": "WALK",
-            "passageName": "Bottom of the Hill",
-            "original": "[[WALK->Bottom of the Hill]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You sleep, allowing your aching body to rest.\nThe boulder rolls back down the hill."
-      },
-      {
-        "name": "Forest",
-        "tags": "",
-        "id": "8",
-        "text": "You continue to push your boulder up the hill. You let your mind wander. You do not see any of the wilted trees.\n\n[[PUSH->Meadow]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Meadow",
-            "original": "[[PUSH->Meadow]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. You let your mind wander. You do not see any of the wilted trees."
-      },
-      {
-        "name": "Meadow",
-        "tags": "",
-        "id": "9",
-        "text": "You continue to push your boulder up the hill. You think about your previous life, how you cheated death. You were once a mighty king. You begin to weep.\n\n[[PUSH->Outside the Meadow]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Outside the Meadow",
-            "original": "[[PUSH->Outside the Meadow]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. You think about your previous life, how you cheated death. You were once a mighty king. You begin to weep."
-      },
-      {
-        "name": "Outside the Meadow",
-        "tags": "",
-        "id": "10",
-        "text": "You continue to push your boulder up the hill. Your mind is lost. You cannot see the trees, nor the flowers, anymore. You cry.\n\n[[PUSH->Outside the Forest]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Outside the Forest",
-            "original": "[[PUSH->Outside the Forest]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. Your mind is lost. You cannot see the trees, nor the flowers, anymore. You cry."
-      },
-      {
-        "name": "Outside the Forest",
-        "tags": "",
-        "id": "11",
-        "text": "You continue to push your boulder up the hill. You do not see the roots cutting out of the ground. You trip and hit your head on your boulder. You feel nothing. Your mind returns. You stop crying.\n\n[[PUSH->Almost there]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Almost there",
-            "original": "[[PUSH->Almost there]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. You do not see the roots cutting out of the ground. You trip and hit your head on your boulder. You feel nothing. Your mind returns. You stop crying."
-      },
-      {
-        "name": "Almost there",
-        "tags": "",
-        "id": "12",
-        "text": "You continue to push your boulder up the hill. You see the hilltop. Your hands and face are bloody. You feel nothing.\n\n[[PUSH->Hilltop]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Hilltop",
-            "original": "[[PUSH->Hilltop]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. You see the hilltop. Your hands and face are bloody. You feel nothing."
-      },
-      {
-        "name": "Hilltop",
-        "tags": "",
-        "id": "13",
-        "text": "You continue to push your boulder up the hill. You begin to weakly pray.\n\n[[PUSH->Peak]]",
-        "links": [
-          {
-            "linkText": "PUSH",
-            "passageName": "Peak",
-            "original": "[[PUSH->Peak]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You continue to push your boulder up the hill. You begin to weakly pray."
-      },
-      {
-        "name": "Peak",
-        "tags": "",
-        "id": "14",
-        "text": "You try to continue to push your boulder up the hill, but it refused. It begins to roll towards you. You yet again step out of it's way. It rolls down the hill, yet again.\n\n[[WALK->Bottom of the Hill]]",
-        "links": [
-          {
-            "linkText": "WALK",
-            "passageName": "Bottom of the Hill",
-            "original": "[[WALK->Bottom of the Hill]]"
-          }
-        ],
-        "hooks": [],
-        "cleanText": "You try to continue to push your boulder up the hill, but it refused. It begins to roll towards you. You yet again step out of it's way. It rolls down the hill, yet again."
-      }
-    ]
-  }
+  "uuid": "D3925CCD-B68F-4680-8848-3CE736B9FC62",
+  "name": "Sisyphus",
+  "creator": "Twine",
+  "creatorVersion": "2.3.14",
+  "schemaName": "Harlowe 3 to JSON",
+  "schemaVersion": "0.0.6",
+  "createdAtMs": 1630625021592,
+  "passages": [
+    {
+      "name": "Bottom of the Hill",
+      "tags": "",
+      "id": "1",
+      "text": "You gaze upon the steep hill ahead of you. You prepare to push your boulder yet again.\n\n[[PUSH->Hill]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Hill",
+          "original": "[[PUSH->Hill]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You gaze upon the steep hill ahead of you. You prepare to push the boulder yet again."
+    },
+    {
+      "name": "Hill",
+      "tags": "",
+      "id": "2",
+      "text": "You begin to push your boulder up the hill once more. You wonder how long you have done this.\n\n[[PUSH->Up the Hill]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Up the Hill",
+          "original": "[[PUSH->Up the Hill]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You begin to push your boulder up the hill once more. You wonder how long you have done this."
+    },
+    {
+      "name": "Up the Hill",
+      "tags": "",
+      "id": "3",
+      "text": "You continue to push your boulder up the hill. You cannot remember how many times you have done this. Your aching body, however, remembers far too well.\n\n[[PUSH->Up and Up]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Up and Up",
+          "original": "[[PUSH->Up and Up]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. You cannot remember how many times you have done this. Your aching body, however, remembers far too well."
+    },
+    {
+      "name": "Up and Up",
+      "tags": "",
+      "id": "4",
+      "text": "You continue to push your boulder up the hill. Your knees are in pain.\n\n[[PUSH->Plateau]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Plateau",
+          "original": "[[PUSH->Plateau]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. Your knees are in pain."
+    },
+    {
+      "name": "Plateau",
+      "tags": "",
+      "id": "5",
+      "text": "You reach a plateau nestled in the hill. It only helps you a little.\n\n\n[[PUSH->Upward]]\n[[REST->Sleep]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Upward",
+          "original": "[[PUSH->Upward]]"
+        },
+        {
+          "linkText": "REST",
+          "passageName": "Sleep",
+          "original": "[[REST->Sleep]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You reach a plateau nestled in the hill. It only helps you a little."
+    },
+    {
+      "name": "Upward",
+      "tags": "",
+      "id": "6",
+      "text": "You continue to push your boulder up the hill. Your mind begins to wander.\n\n[[PUSH->Forest]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Forest",
+          "original": "[[PUSH->Forest]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. Your mind begins to wander."
+    },
+    {
+      "name": "Sleep",
+      "tags": "",
+      "id": "7",
+      "text": "You sleep, allowing your aching body to rest.\nThe boulder rolls back down the hill.\n\n[[WALK->Bottom of the Hill]]",
+      "links": [
+        {
+          "linkText": "WALK",
+          "passageName": "Bottom of the Hill",
+          "original": "[[WALK->Bottom of the Hill]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You sleep, allowing your aching body to rest.\nThe boulder rolls back down the hill."
+    },
+    {
+      "name": "Forest",
+      "tags": "",
+      "id": "8",
+      "text": "You continue to push your boulder up the hill. You let your mind wander. You do not see any of the wilted trees.\n\n[[PUSH->Meadow]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Meadow",
+          "original": "[[PUSH->Meadow]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. You let your mind wander. You do not see any of the wilted trees."
+    },
+    {
+      "name": "Meadow",
+      "tags": "",
+      "id": "9",
+      "text": "You continue to push your boulder up the hill. You think about your previous life, how you cheated death. You were once a mighty king. You begin to weep.\n\n[[PUSH->Outside the Meadow]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Outside the Meadow",
+          "original": "[[PUSH->Outside the Meadow]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. You think about your previous life, how you cheated death. You were once a mighty king. You begin to weep."
+    },
+    {
+      "name": "Outside the Meadow",
+      "tags": "",
+      "id": "10",
+      "text": "You continue to push your boulder up the hill. Your mind is lost. You cannot see the trees, nor the flowers, anymore. You cry.\n\n[[PUSH->Outside the Forest]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Outside the Forest",
+          "original": "[[PUSH->Outside the Forest]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. Your mind is lost. You cannot see the trees, nor the flowers, anymore. You cry."
+    },
+    {
+      "name": "Outside the Forest",
+      "tags": "",
+      "id": "11",
+      "text": "You continue to push your boulder up the hill. You do not see the roots cutting out of the ground. You trip and hit your head on your boulder. You feel nothing. Your mind returns. You stop crying.\n\n[[PUSH->Almost there]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Almost there",
+          "original": "[[PUSH->Almost there]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. You do not see the roots cutting out of the ground. You trip and hit your head on your boulder. You feel nothing. Your mind returns. You stop crying."
+    },
+    {
+      "name": "Almost there",
+      "tags": "",
+      "id": "12",
+      "text": "You continue to push your boulder up the hill. You see the hilltop. Your hands and face are bloody. You feel nothing.\n\n[[PUSH->Hilltop]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Hilltop",
+          "original": "[[PUSH->Hilltop]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. You see the hilltop. Your hands and face are bloody. You feel nothing."
+    },
+    {
+      "name": "Hilltop",
+      "tags": "",
+      "id": "13",
+      "text": "You continue to push your boulder up the hill. You begin to weakly pray.\n\n[[PUSH->Peak]]",
+      "links": [
+        {
+          "linkText": "PUSH",
+          "passageName": "Peak",
+          "original": "[[PUSH->Peak]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You continue to push your boulder up the hill. You begin to weakly pray."
+    },
+    {
+      "name": "Peak",
+      "tags": "",
+      "id": "14",
+      "text": "You try to push your boulder up the hill, but it refused. It begins to roll towards you. You yet again step out of it's way. It rolls down the hill, yet again.\n\n[[WALK->Bottom of the Hill]]",
+      "links": [
+        {
+          "linkText": "WALK",
+          "passageName": "Bottom of the Hill",
+          "original": "[[WALK->Bottom of the Hill]]"
+        }
+      ],
+      "hooks": [],
+      "score": 1,
+      "cleanText": "You try to push your boulder up the hill, but it refused. It begins to roll towards you. You yet again step out of it's way. It rolls down the hill, yet again."
+    }
+  ]
+}

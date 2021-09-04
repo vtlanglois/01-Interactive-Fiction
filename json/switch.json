@@ -1,0 +1,42 @@
+{
+    "uuid": "1B37AFF2-C431-48BC-9E3C-953E83C0681B",
+    "name": "Switch",
+    "creator": "Twine",
+    "creatorVersion": "2.3.14",
+    "schemaName": "Harlowe 3 to JSON",
+    "schemaVersion": "0.0.6",
+    "createdAtMs": 1630625397865,
+    "passages": [
+      {
+        "name": "Switch OFF",
+        "tags": "",
+        "id": "1",
+        "text": "The machine is off.\n\n\n[[FLIP->Switch ON]]",
+        "links": [
+          {
+            "linkText": "FLIP",
+            "passageName": "Switch ON",
+            "original": "[[FLIP->Switch ON]]"
+          }
+        ],
+        "hooks": [],
+        "cleanText": "The machine is off."
+      },
+      {
+        "name": "Switch ON",
+        "tags": "",
+        "id": "2",
+        "text": "The machine is on.\n\n[[FLIP->Switch OFF]]",
+        "links": [
+          {
+            "linkText": "FLIP",
+            "passageName": "Switch OFF",
+            "original": "[[FLIP->Switch OFF]]"
+          }
+        ],
+        "hooks": [],
+        "score": 1,
+        "cleanText": "The machine is on."
+      }
+    ]
+  }
