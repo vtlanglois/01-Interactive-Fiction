@@ -4,21 +4,25 @@ import json
 import os
 assert sys.version_info >= (3,9), "This script requires at least Python 3.9"
 
+
+# ----------------------------------------------------------------
+
 def select_game():
   #Get all json filenames within the json folder
   path_to_json_files = "json/"
   json_files = [pos_json for pos_json in os.listdir(path_to_json_files) if pos_json.endswith('.json')]
-  
+  json_files = [json_file.replace(".json", "") for json_file in json_files]
   response = ""
   #Allow player to select json file
   while True:
     if response in json_files:
       break
-    print("Select a Game File:")
+    print("You have the following Game Paks:")
     print(json_files)
+    print("Select a Game Pak:")
     response = input()  
   #get the file, create a world, return the world
-  response = "json/"+response
+  response = "json/"+response+".json"
   file = open(response, )
   world = json.load(file)
   return world
@@ -83,5 +87,7 @@ while True:
   render(current_location, score, moves)
   response = get_input()
   moves+=1
+
+print("Thank you for playing!")
    
 
